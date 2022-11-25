@@ -1,93 +1,95 @@
 class UsersController < ApplicationController
-  before_action :authorize_request, only: [:verify]
-  before_action :set_user, only: [:show, :userPosts]
-  # GET /users
-  def index
-    @users = User.select(:id,:username, :email, :bio, :img_url, :is_teacher)
+    before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-    render json: @users, include: :posts, status: :ok
-  end
-  
-  def teachers
-    @teachers = User.select(:id,:username, :email, :bio, :img_url, :is_teacher).where("is_teacher = true")
-    render json: @teachers
-  end
-
-  # GET /users/1
-  def show
-    render json: @user, include: :posts, status: :ok
-  end
-
-  # POST /users
-  def create
-    user = User.new(user_register_params)
-    if user.save
-      token = create_token(user.id)
-      render json: {
-        user: user.attributes.except("password_digest"),
-        token: token,
-      }, status: :created
-    else
-      render json: user.errors, status: 422
-    end
-
-  end
-
-  # POST /users/login
-  def login
-    user = User.find_by(email: user_login_params[:email])
-
-    if user && user.authenticate(user_login_params[:password])
-      token = create_token(user.id)
-      render json: {
-        user: user.attributes.except("password_digest"),
-        token: token,
-      }, status: :ok
-    else
-      render json: {error: "unauthorized"}, status: :unauthorized
-    end
-  end
-
-  # GET /users/verify
-  def verify
-    render json: @current_user.attributes.except("password_digest"), status: :ok
-  end
-
-  # PATCH/PUT /users/1
-  # def update
-  #   if @user.update(user_params)
-  #     render json: @user
-  #   else
-  #     render json: @user.errors, status: :unprocessable_entity
-  #   end
-  # end
-
-  # # DELETE /users/1
-  # def destroy
-  #   @user.destroy
-  # end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.select(:id,:username, :email, :bio, :img_url, :is_teacher).find(params[:id])
-    end
-
-    # Only allow a list of trusted parameters through.
-    # def user_params
-    #   params.require(:user).permit(:username, :email, :bio, :img_url, :password_digest, :is_teacher)
-    # end
-
-    def user_register_params
-      params.require(:user).permit(:username, :email, :password,:is_teacher, :bio, :img_url)
+    # GET /users
+    # GET /users.json
+    def index
+      @users = User.all
     end
   
-    def user_login_params
-      params.require(:user).permit(:email, :password)
+    # GET /users/1
+    # GET /users/1.json
+    def show
+    end
+  
+    # GET /users/new
+    def new
+      @user = User.new
+    end
+  
+    # GET /users/1/edit
+    def edit
+    end
+  
+    # POST /users
+    # POST /users.json
+    def create
+      @user = User.new(user_params)
+  
+      respond_to do |format|
+        if @user.save
+          format.html { redirect_to @user, notice: 'User was successfully created.' }
+          format.json { render :show, status: :created, location: @user }
+        else
+          format.html { render :new }
+          format.json { render json: @user.errors, status: :unprocessable_entity }
+        end
+      end
+    end
+  
+    # PATCH/PUT /users/1
+    # PATCH/PUT /users/1.json
+    def update
+      respond_to do |format|
+        if @user.update(user_params)
+          format.html { redirect_to @user, notice: 'User was successfully updated.' }
+          format.json { render :show, status: :ok, location: @user }
+        else
+          format.html { render :edit }
+          format.json { render json: @user.errors, status: :unprocessable_entity }
+        end
+      end
+    end
+  
+    # DELETE /users/1
+    # DELETE /users/1.json
+    def destroy
+      @user.destroy
+      respond_to do |format|
+        format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+        format.json { head :no_content }
+      end
     end
 
-    def create_token(id)
-      payload = {id: id, exp: 24.hours.from_now.to_i}
-      JWT.encode(payload, SECRET_KEY)
+
+
+    def index
+        users = User.all
+        render json: users
     end
+
+    def show
+        user = User.find_by(id: params[:id])
+        if user
+            render json: user, status: :ok
+        else
+            not_found_response
+        end
+    end
+
+    private
+
+    def not_found_response
+        render json: {error:"User not found"}, status: :not_found
+    end
+
+      # Use callbacks to share common setup or constraints between actions.
+      def set_user
+        @user = User.find(params[:id])
+      end
+  
+      # Never trust parameters from the scary internet, only allow the white list through.
+      def user_params
+        params.require(:user).permit(:name, :email, :password, :gender, :phone, :image, :image_cache)
+      end
 end

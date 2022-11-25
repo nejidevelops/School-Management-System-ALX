@@ -1,156 +1,52 @@
-# E-learn
+# phase-4-project
 
-## SCHOOL MANAGEMENT SYSTEM
+## Project requirements
+Backend
+Your project must use a non-trivial Rails backend. Consult the following list for examples of things to include. You do not need to include all of these things, and the final decision of what must be included will be up to your project managers.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-- [Overview](#overview)
-- [MVP](#mvp)
-  - [Libraries and Frameworks](#libraries-and-frameworks)
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
-    - [Component Hierarchy](#component-hierarchy)
-    - [Component Architecture](#component-architecture)
-    - [Project Schedule](#project-schedule)
-    - [Time Estimates](#time-estimates)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
-- [Post-MVP](#post-mvp)
+[ ] Auth
+[ ] Tests
+[ ] Multiple hasmanythrough relationships
+[ ] Seeds from a complex data set
+[ ] Custom routes
+[ ] Custom controller/model methods
+[ ] Basic database query optimizations
+[ ] Background jobs for slow actions
+[ ] Sockets or email integration
+[ ] One significant refactor
+[ ] Validation
 
-<br>
+Frontend
+Your product must use a React based frontend. Consult the following list for examples of things to include. You do not need to include all of these things, and the final decision of what must be included will be up to your project manager (your instructor).
 
-## Overview
-
-**e-LEARN** is an app that connects students or new learners of any subject with teachers around the world who are looking for students. TalenTree also allows both teachers and students to make posts and build a resume of work on their profile. Teacher accounts can create classes and students can search for classes by categories in the Browse tab to register for courses.
-
-<br>
-
-## MVP
-
-**E-LEARN**'s minimum viable product will be a functioning full-stack app that has a back-end with models for students, teachers, posts, and classes (along with the connections between each entity) and a front-end that allows users to perform full CRUD (Create, Read, Update, Delete) on the server by viewing posts and creating/editing/deleting their own posts. Teachers should be able to create their own classes that the students can then register for via a connection request (see [ERD Model](#erd-model) for structure of data). The styling will incorporate flexbox and will be responsive so the app looks good on mobile screens as well.
-
-<br>
-
-### Libraries and Frameworks
-
-|   Library    | Description                                                                                                                                                                                                                     |
-| :----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|    React     | Library used to structure front-end in terms of components. Will allow app to have state and perform actions on mounting of components with React hooks.                                                                        |
-| React Router | Library will assist in the creation of a multi-page app that doesn't require a refresh. Will allow us to partition app into different screens and incorporates a NavLink component that will assist us with our navigation bar. |
-|    Axios     | Library will allow us to make server requests from the front-end to then render and manipulate data from the database.                                                                                                          |
-
-|    Framework    | Description                                                                                                                                                                  |
-| :-------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      Rails      | Back-end framework to assist with the creation of database entities and modeling. Will also be running the back-end server from which the front-end will be retreiving data. |
-| React-Bootstrap | Front-end framework to help with responsiveness of site. Will also be used for certain pre-built components.                                                                 |
-
-<br>
-
-### Client (Front End)
+[ ] Auth
+[ ] Tests
+[ ] Interacting with a complex API
+[ ] Redux
+[ ] Custom CSS
+[ ] One significant refactor
+## Project Name
+Edupo School
 
 
-#### Component File Structure
-
-```structure
-src
-|__ screens/
-      |__ Home
-            |__ Home.css
-            |__ Home.jsx
-      |__ LogIn
-            |__ LogIn.css
-            |__ LogIn.jsx
-      |__ Register
-            |__ Register.css
-            |__ Register.jsx
-      |__ Browse
-            |__ Browse.css
-            |__ Browse.jsx
-      |__ Profile
-            |__ Profile.css
-            |__ Profile.jsx
-      |__ UserDetail
-            |__ UserDetail.css
-            |__ UserDetail.jsx
-      |__ CreatePost
-            |__ CreatePost.css
-            |__ CreatePost.jsx
-      |__ EditPost
-            |__ EditPost.css
-            |__ EditPost.jsx
-      |__ CreateClass
-            |__ CreateClass.css
-            |__ CreateClass.jsx
-      |__ EditClass
-            |__ EditClass.css
-            |__ EditClass.jsx
+## Live Link
+Both Front-end and backend have been deployed as one application, and the app can be accessed at https://ancient-crag-96879.herokuapp.com/
+Default username and password for admin is admin
 
 
-|__ components/
-      |__ Header
-            |__ Header.css
-            |__ Header.jsx
-      |__ Footer
-            |__ Footer.css
-            |__ Footer.jsx
-      |__ Layout
-            |__ Layout.css
-            |__ Layout.jsx
-      |__ TeacherCard
-            |__ TeacherCard.css
-            |__ TeacherCard.jsx
-      |__ Form
-            |__ Form.css
-            |__ Form.jsx
-      |__ Sort
-            |__ Sort.css
-            |__ Sort.jsx
-|__ services/
-      |__ apiConfig.js
-      |__ users.js
-      |__ posts.js
-      |__ classes.js
+## Author
+Ali Mariam, Dennis Mburu, Olivia Adongo, Angela Kanyi, John Okech
 
-```
+## Project Description
+Problem Statement:
+Managing routine working-on manually has always been a daunting task for the management team. Due to an apparent lack of technology, administrators and other stakeholders have a difficult time achieving their designated goals in allotted time. As a result, the institute begins to lag behind other institutes, causing them to lose the desired candidate’s attention. 
 
+Solution statement:
+Success in everyday tasks is what’s in demand of the emerging education system, and to achieve that you need a robust and comprehensive school management system which will automate your institution’s operations. It improves the efficiency and effectiveness of daily institutional operations. The main purpose of this system is to facilitate the school management to store student information and disseminating information on any changes that happen in schools to parents and teachers.
 
+## User Story.
+When one logs in/signs in, they are redirected to the home page.
+After which they they can navigate to login page from which they can as any of the users(Teacher, Parent, Student or Admin). After logging in they will all be directed to their specific pages that is; the teacher view, parent view, admin view and student view respectively.
 
-#### Time Estimates
-
-| Task                        | Priority | Estimated Time | Time Invested | Actual Time |
-| --------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Planning/Wireframes         |    H     |     4 hrs      |     5hrs      |             |
-| Back-end Rails Setup        |    H     |     3 hrs      |               |             |
-| Back-end Models/Seed        |    H     |     3 hrs      |               |             |
-| Back-end Connections        |    H     |     2 hrs      |               |             |
-| Front-end React Setup       |    H     |     3 hrs      |               |             |
-| React Router Setup          |    H     |     3 hrs      |               |             |
-| Component Rendering         |    H     |     3 hrs      |               |             |
-| Axios Calls                 |    H     |     3 hrs      |               |             |
-| Axios Requests              |    H     |     2 hrs      |               |             |
-| Authentication              |    M     |     3 hrs      |               |             |
-| Functionality Authorization |    M     |     3 hrs      |               |             |
-| Screen/Component Styling    |    L     |     3 hrs      |               |             |
-| Debugging                   |    M     |     3 hrs      |               |             |
-| Animation                   |    L     |     2 hrs      |               |             |
-| Deployment                  |    H     |     2 hrs      |               |             |
-| TOTAL                       |          |     42 hrs     |     5hrs      |             |
-
-<br>
-
-### Server (Back End)
-
-#### ERD Model
-
-![ERD Diagram](https://res.cloudinary.com/dszox5xnw/image/upload/v1628791604/TalenTree/talentree-erd_2_gkopwu.png)
-<br>
-
----
-
-## Post-MVP
-
-- Authentication
-- Authorization for teacher vs student
-- Advanced CSS
-- Animation
-- Like/Comment Functionality
+## Copyright and license Information
+MIT License Copyright (c) [2022] [Ali Mariam, Dennis Mburu, Olivia Adongo, Angela Kanyi, John Okech] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -10,47 +10,126 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_17_183338) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "courses", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "category"
-    t.date "start_date"
-    t.date "end_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.bigint "student_id"
-    t.bigint "teacher_id"
-    t.index ["student_id"], name: "index_courses_on_student_id"
-    t.index ["teacher_id"], name: "index_courses_on_teacher_id"
+ActiveRecord::Schema[7.0].define(version: 2022_11_03_185000) do
+  create_table "admins", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "email"
+    t.string "full_name"
+    t.string "password_digest"
+    t.string "user_name"
+    t.string "role"
+    t.string "username"
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string "media_url"
-    t.text "content"
-    t.bigint "user_id", null: false
-    t.bigint "course_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["course_id"], name: "index_posts_on_course_id"
-    t.index ["user_id"], name: "index_posts_on_user_id"
+  create_table "assessments", force: :cascade do |t|
+    t.string "name"
+    t.integer "subject_id"
+    t.integer "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "assignments", force: :cascade do |t|
+    t.string "name"
+    t.integer "subject_id"
+    t.string "due_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "classrooms", force: :cascade do |t|
+    t.string "name"
+    t.integer "teacher_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "parents", force: :cascade do |t|
+    t.string "role"
+    t.string "address"
+    t.string "phone_no"
+    t.string "full_name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "username"
+  end
+
+  create_table "staffs", force: :cascade do |t|
+    t.string "full_name"
+    t.string "post"
+    t.string "image"
+    t.string "department"
+    t.string "phone_no"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "student_assesments", force: :cascade do |t|
+    t.integer "assessment_id"
+    t.integer "student_id"
+    t.integer "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "student_assignments", force: :cascade do |t|
+    t.integer "student_id"
+    t.integer "assignment_id"
+    t.integer "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string "role"
+    t.string "gender"
+    t.string "image"
+    t.integer "parent_id"
+    t.string "phone_no"
+    t.integer "admission_no"
+    t.integer "subject_id"
+    t.string "full_name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "classroom_id"
+    t.string "username"
+  end
+
+  create_table "subject_teachers", force: :cascade do |t|
+    t.integer "teacher_id"
+    t.integer "subject_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teachers", force: :cascade do |t|
+    t.string "role"
+    t.string "gender"
+    t.string "image"
+    t.string "phone_no"
+    t.string "address"
+    t.string "full_name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "username"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "email"
-    t.text "bio"
-    t.string "img_url", default: "https://res.cloudinary.com/dszox5xnw/image/upload/v1629222245/TalenTree/NoUserImage_uzwprl.png"
-    t.string "password_digest"
-    t.boolean "is_teacher"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "posts", "courses"
-  add_foreign_key "posts", "users"
 end
