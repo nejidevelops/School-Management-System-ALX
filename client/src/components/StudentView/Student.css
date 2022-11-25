@@ -1,0 +1,68 @@
+.kard {
+  display: center;
+ margin-left: auto;
+ margin-right: auto;
+  cursor: pointer;
+  background-color: transparent;
+  width: 1000px;
+  height: 300px;
+  perspective: 1000px;
+}
+.kard h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  size-adjust: 10px;
+}
+.kard img {
+ padding-top: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit:contain;
+}
+.kard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.kard:hover .kard-inner {
+  transform: rotateY(180deg);
+}
+.kard-front,
+.kard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.kard-back {
+  background-color: salmon;
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+.kard li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .kards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .kards {
+    grid-template-columns: 1fr;
+  }
+  .kard img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+}
