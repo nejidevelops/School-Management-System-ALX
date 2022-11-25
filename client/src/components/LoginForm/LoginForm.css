@@ -1,0 +1,50 @@
+.form-container {
+  min-height: 70vh;
+  background-color: black;
+  width: 60vw;
+  max-width: 600px;
+  min-width: 400px;
+  margin: 60px auto;
+  border-radius: 20px;
+  color: white
+}
+
+input{
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .edit-form {
+    width: 85%;
+  }
+}
+
+h3{
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: cursive;
+  letter-spacing: 7px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding: 64px;
+  background: linear-gradient(to right, hsl(0, 0%, 100%) 0, hsl(201, 66%, 21%) 10%, hsl(0, 0%, 100%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
