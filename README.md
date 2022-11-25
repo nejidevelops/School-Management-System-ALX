@@ -1,5 +1,9 @@
 # E-learn
 
+## SCHOOL MANAGEMENT SYSTEM
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Libraries and Frameworks](#libraries-and-frameworks)
