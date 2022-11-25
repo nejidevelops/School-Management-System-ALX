@@ -1,0 +1,48 @@
+.juu_left{
+/* background: peachpuff; */
+padding: 20px;
+width: 450px;
+
+}
+.chini_right{
+/* background: pink; */
+padding: 20px;
+width: 450px;
+}
+.new{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.area input{
+    margin-top: 20px;
+    margin-left: 30px;
+    /* border: 1px solid grey; */
+    /* border-radius: 5px; */
+}
+.studentTopic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+.formstd{
+    padding: 20px;
+    display: flex;
+    /* background: pink; */
+}

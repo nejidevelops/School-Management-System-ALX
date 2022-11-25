@@ -1,0 +1,124 @@
+.widgets{
+    display: flex;
+    margin-left: 30px;
+    flex: 1;
+    width: 950px;
+    margin-top: 20px;
+    height: 200px;
+
+}
+.widget{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    /* width: 600px; */
+    padding: 50px;
+    position: relative;
+    /* border: 1px solid black; */
+    height: 200px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+ .user{
+    /* background: pink; */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.number{
+/* background: yellow; */
+position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 20px;
+    color: rgb(92, 87, 87);
+}
+.ona{
+    /* background: peachpuff; */
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: grey;
+    font-style: 12px;
+    /* border-bottom: 1px solid grey; */
+}
+.go{
+    /* background: green; */
+    position: absolute;
+    top: 10%;
+    right: 17%;
+}
+.identifier{
+    /* background: olive; */
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+.featured{
+    /* background: pink; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    flex: 1;
+    width: 950px;
+    padding: 20px;
+    /* margin-top: 20px; */
+    height: 200px;
+}
+.graphs{
+    /* background: pink; */
+    /* width: 200px; */
+    padding: 10px;
+    /* color: grey; */
+    text-align: center;
+    /* height: 40px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  border-radius: 10px; 
+
+}
+.top{
+    padding: 10px;
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    /* align-items: center;
+    justify-content: space-between; */
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+
+}
+.bottom{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    /* height: 100px; */
+}
+.calendar{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+.link{
+    border-bottom: 1px solid rgb(139, 134, 134);
+}

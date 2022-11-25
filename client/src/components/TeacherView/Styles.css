@@ -1,0 +1,11 @@
+.score-form{
+    min-height: 70vh;
+    background-color: #fff;
+    width: 60vw;
+    max-width: 600px;
+    min-width: 400px;
+    padding-top :40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: "red"
+}

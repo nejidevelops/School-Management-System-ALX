@@ -1,0 +1,46 @@
+.parentTopic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+.mzaziform{
+    /* padding: 4%; */
+    /* text-align: center; */
+    /* display: flex; */
+   align-items: center;
+    /* background: pink; */
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-left: 60px;
+    /* padding: 15px; */
+}
+.formInput input{
+    /* border: 1px solid rgb(213, 209, 209); */
+    border-radius: 5px;
+    display: flex;
+    /* align-items: center; */
+    /* margin-left: 20px; */
+    width: 500px;
+    /* height: 40px; */
+}
+.formInput{
+    margin-top: 15px;
+    margin-left: 180px;
+    /* padding: 3px; */
+}
+/* .parent-form-wrapper-left{
+    background: pink;
+}
+.parent-form-wrapper-right{
+    background: peachpuff;
+} */
