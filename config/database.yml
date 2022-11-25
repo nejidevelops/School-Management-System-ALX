@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: talentree_development
+  database: dfkdr5ll6gumo
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: talentree_test
+  database: dfkdr5ll6gumo
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: talentree_production
-  username: talentree
-  password: <%= ENV['TALENTREE_DATABASE_PASSWORD'] %>
+  database: dfkdr5ll6gumo
+  username: lhsvuamkqhkttv
+  password: cb61336c3b04de87c46ea2358f4dabf7bb787c33d855c67aab90d158eb872841
