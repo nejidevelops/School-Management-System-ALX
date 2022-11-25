@@ -1,0 +1,119 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px;
+  background-color: #749F82;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post > img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  padding: 0 20px 20px;
+}
+.post > p {
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  padding: 0 25px;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 0;
+}
+
+.post-header-text {
+  margin: 0 20px;
+}
+
+.post-header-text > h3 {
+  font-size: 1.9rem;
+}
+.post-header-text > h5 {
+  font-size: 1.5rem;
+  color: #d0baad;
+}
+.post-header-img > img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.post-buttons {
+  display: flex;
+}
+
+.post-buttons * {
+  color: white;
+}
+
+.post-buttons > button {
+  font-size: 1.5rem;
+  width: 50%;
+  border: none;
+  background-color: #aa968a;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-top: 1px solid white;
+  cursor: pointer;
+}
+.post-buttons > :first-child {
+  border-right: 1px solid white;
+}
+
+.delete-confirm {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.763);
+  top: 0px;
+  left: 0px;
+}
+
+.delete-box {
+  background-color: #749F82;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.delete-buttons {
+  margin-top: 5px;
+}
+
+.delete-buttons > button {
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #aa968a;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.delete-buttons > button:hover {
+  background-color: #aa968ac8;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

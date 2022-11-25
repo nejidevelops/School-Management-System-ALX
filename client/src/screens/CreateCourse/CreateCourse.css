@@ -1,0 +1,69 @@
+.create-course {
+  display: flex;
+  justify-content: center;
+}
+
+.create-course-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #749F82;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.create-course-form * {
+  font-size: 1.5rem;
+}
+
+.create-course-form > * {
+  margin: 10px 10px 0;
+}
+
+.create-course-form > h2 {
+  color: #d0baad;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.create-course-form > .buttons {
+  display: flex;
+  margin: 10px 0 0;
+}
+
+.create-course-form > input {
+  padding: 5px;
+}
+
+.create-course-form label {
+  color: white;
+}
+
+.create-course-form label + input {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.create-course-form > textarea {
+  resize: none;
+  padding: 5px;
+  min-height: 10rem;
+}
+.create-course-buttons * {
+  color: white;
+}
+.create-course-buttons > button {
+  font-size: 1.5rem;
+  width: 50%;
+  border: none;
+  background-color: #aa968a;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-top: 1px solid white;
+}
+.create-course-buttons > :first-child {
+  border-right: 1px solid white;
+}

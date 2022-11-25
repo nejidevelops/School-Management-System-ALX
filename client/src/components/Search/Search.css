@@ -1,0 +1,30 @@
+.browse-search {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.browse-search h2 {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.search-bar select {
+  border-radius: 7px 0px 0px 7px;
+  font-size: 2rem;
+}
+
+.search-bar input {
+  border-radius: 0px 7px 7px 0px;
+  border: 1px solid #707070;
+  font-size: 2rem;
+  padding: 1px;
+  margin-left: -1px;
+}
+
+@media screen and (max-width: 767px) {
+  .browse-search {
+    flex-direction: column;
+  }
+}
