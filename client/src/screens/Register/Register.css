@@ -1,0 +1,33 @@
+.register-buttons {
+  display: flex;
+}
+.student-btn,
+.teacher-btn {
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 0px 5px 20px;
+  cursor: pointer;
+}
+
+.student-btn > img,
+.teacher-btn > img {
+  height: 50px;
+}
+
+.student-btn {
+  background-color: #425F57;
+}
+
+.teacher-btn {
+  background-color: #aa968a;
+}
+
+.btn-selected {
+  border: 2px solid white;
+}

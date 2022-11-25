@@ -1,0 +1,13 @@
+.course {
+  background-color: #749F82;
+  color: white;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+}
+.course h3 {
+  color: #d0baad;
+}

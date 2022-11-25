@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Glacial Indifference", sans-serif;
+  text-decoration: none;
+}
+body {
+  color: black;
+}
+h1 {
+  font-family: "Norwester", sans-serif;
+}
+
+.gray {
+  color: #707070;
+}
+
+.brown {
+  color: #aa968a;
+}
+.light-brown {
+  color: #d0baad;
+}
+
+.green {
+  color: #425F57;
+}
+.light-green {
+  color: #c6f2ab;
+}

@@ -1,0 +1,90 @@
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #425F57;
+  color: white;
+  padding: 10px 0 0;
+}
+header > section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+header > section > h1 {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+}
+header > section > h1 > img {
+  height: 100px;
+}
+
+header > nav {
+  background-color: #425F57;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.active {
+  border-bottom: 7px solid #4b7f52;
+}
+
+.active-profile {
+  background-color: rgba(0, 0, 0, 0.277);
+}
+.profile-link {
+  display: flex;
+  color: white;
+  border-radius: 70px;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.5s ease-out;
+}
+
+.profile-nav {
+  display: none;
+}
+
+.profile-link-text h3 {
+  font-size: 1.5rem;
+}
+.profile-link-text h5 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.profile-link img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.profile-link:hover {
+  background-color: rgba(0, 0, 0, 0.277);
+}
+
+@media screen and (max-width: 900px) {
+  .profile-nav {
+    display: block;
+  }
+  .profile-header {
+    display: none;
+  }
+  header {
+    align-items: center;
+  }
+  header > nav {
+    width: 100%;
+  }
+}

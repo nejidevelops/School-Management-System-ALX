@@ -1,0 +1,20 @@
+.teacher {
+  background-color: #749F82;
+  color: white;
+  width: fit-content;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+.teacher img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+.teacher h3 {
+  color: #d0baad;
+}
