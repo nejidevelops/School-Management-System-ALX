@@ -1,52 +1,87 @@
-# phase-4-project
+# EDUPO SCHOOL
 
-## Project requirements
-Backend
-Your project must use a non-trivial Rails backend. Consult the following list for examples of things to include. You do not need to include all of these things, and the final decision of what must be included will be up to your project managers.
+   ## By Newton Ombese
+   ## By Phoebe Ogallo
 
-[ ] Auth
-[ ] Tests
-[ ] Multiple hasmanythrough relationships
-[ ] Seeds from a complex data set
-[ ] Custom routes
-[ ] Custom controller/model methods
-[ ] Basic database query optimizations
-[ ] Background jobs for slow actions
-[ ] Sockets or email integration
-[ ] One significant refactor
-[ ] Validation
+## Screenshot
+   ![image](./src/images/)
 
-Frontend
-Your product must use a React based frontend. Consult the following list for examples of things to include. You do not need to include all of these things, and the final decision of what must be included will be up to your project manager (your instructor).
+## Table of Content
 
-[ ] Auth
-[ ] Tests
-[ ] Interacting with a complex API
-[ ] Redux
-[ ] Custom CSS
-[ ] One significant refactor
-## Project Name
-Edupo School
+- [Description](#description)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation Process](#installation-Process)
+- [Live link](#Live-Link)
+- [Technology Used](#technology-Used)
+- [Licence](#licence)
+- [Authors Info](#Authors-info)
+
+## Description
+
+ <p>This project is a REACT application for EDUPO School that shows a database that keeps record of the school, has input forms for adding students, teacher and courses, a contact form that is used to send queries.</p>
+
+## Features
+
+As a user of the application,you will be able to :
+
+1. Add a student
+2. Add a course
+3. Add a teacher
+4. Send a message using the contact us form
+
+ ###  Requirements
+
+ * Access to  a computer or any other garget
+
+ * Access to internet
+
+### Installation Process
+
+ ****  
+* Clone to the repo : git clone https://github.com/NewtonOmbese/School-Management-System-ALX.git
+
+* Unzip the downloaded files in a folder of choice.
+
+* Open the index file from the zipped file with any browser.
+
+### Live Link
+* The live link for the project is https://ancient-crag-96879.herokuapp.com/
+
+### Technology  Used
+* REACT - For the frontend
+
+* CSS - which was used to style the User Interface.
+
+* Tailwind - which was used to create a responsive navbar
+
+* Ruby - For backend and database
+
+MIT License
+
+Copyright (c) [2022] [Newton Ombese, Phoebe Ogallo]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Authors Info
+
+LinkedIn - [Newton Ombese](https://www.linkedin.com/in/newton-ombese-570862210/)
 
 
-## Live Link
-Both Front-end and backend have been deployed as one application, and the app can be accessed at https://ancient-crag-96879.herokuapp.com/
-Default username and password for admin is admin
-
-
-## Author
-Ali Mariam, Dennis Mburu, Olivia Adongo, Angela Kanyi, John Okech
-
-## Project Description
-Problem Statement:
-Managing routine working-on manually has always been a daunting task for the management team. Due to an apparent lack of technology, administrators and other stakeholders have a difficult time achieving their designated goals in allotted time. As a result, the institute begins to lag behind other institutes, causing them to lose the desired candidate’s attention. 
-
-Solution statement:
-Success in everyday tasks is what’s in demand of the emerging education system, and to achieve that you need a robust and comprehensive school management system which will automate your institution’s operations. It improves the efficiency and effectiveness of daily institutional operations. The main purpose of this system is to facilitate the school management to store student information and disseminating information on any changes that happen in schools to parents and teachers.
-
-## User Story.
-When one logs in/signs in, they are redirected to the home page.
-After which they they can navigate to login page from which they can as any of the users(Teacher, Parent, Student or Admin). After logging in they will all be directed to their specific pages that is; the teacher view, parent view, admin view and student view respectively.
-
-## Copyright and license Information
-MIT License Copyright (c) [2022] [Ali Mariam, Dennis Mburu, Olivia Adongo, Angela Kanyi, John Okech] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+# ENJOY AND TAKE TIME TO LEARN CODING
