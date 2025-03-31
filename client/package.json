@@ -16,7 +16,7 @@
     "@material-ui/styles": "^4.11.5",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.11",
-    "@mui/styles": "^5.10.10",
+    "@mui/styles": "^5.16.14",
     "@mui/system": "^5.10.10",
     "@mui/x-data-grid": "^5.17.8",
     "axios": "^1.1.3",
